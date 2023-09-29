@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+section {
+    display: flex;
+    height: calc(100vh - 60px);
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 400px;
+    box-shadow: 0 0 40px 17px rgba(153, 153, 153, 1);
+    
+}
+
+#display {
+    text-align: right;
+    height: 100px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #e4e4e4;
+}
+
+.button {
+    border: .5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.button:hover {
+    background-color: #323330;
+    color: #fff;
+}
+
+#equal {
+    background-color: rgb(70, 70, 239);
+    color: #fff;
+    transition: .4s;
+}
+
+#equal:hover {
+    background-color:  rgb(18, 18, 246);
+}
+
+
+.footer {
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.love__p{
+	color: #fff;
+}
+
+.heart{
+	color: #fff;
+	display: inline-block;
+	margin: 0 15px;
+	animation-name: heart;
+	animation-duration: 1s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+
+@keyframes heart{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.6);
+	}
+}
+
+.love__pm{
+	color: #fff;
+	text-decoration: underline;
+	margin-left: 5px;
+}
